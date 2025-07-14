@@ -1,0 +1,80 @@
+ramos_pdf = [
+    {"nombre": "Matemática general", "semestre": 1, "prerrequisitos": []},
+    {"nombre": "Taller de comunicación oral y escrita", "semestre": 1, "prerrequisitos": []},
+    {"nombre": "Química", "semestre": 1, "prerrequisitos": []},
+    {"nombre": "Biología celular", "semestre": 1, "prerrequisitos": []},
+    {"nombre": "Introducción a la medicina veterinaria", "semestre": 1, "prerrequisitos": []},
+
+    {"nombre": "Anatomía del canino", "semestre": 2, "prerrequisitos": []},
+    {"nombre": "Histoembriología", "semestre": 2, "prerrequisitos": []},
+    {"nombre": "Bioestadística", "semestre": 2, "prerrequisitos": ["Matemática general"]},
+    {"nombre": "Bioquímica", "semestre": 2, "prerrequisitos": ["Química"]},
+    {"nombre": "Inglés I", "semestre": 2, "prerrequisitos": []},
+
+    {"nombre": "Anatomía comparada", "semestre": 3, "prerrequisitos": ["Anatomía del canino"]},
+    {"nombre": "Práctica básica", "semestre": 3, "prerrequisitos": ["Anatomía del canino"]},
+    {"nombre": "Medio ambiente y gestión ambiental", "semestre": 3, "prerrequisitos": ["Biología celular"]},
+    {"nombre": "Zoología", "semestre": 3, "prerrequisitos": ["Histoembriología"]},
+    {"nombre": "Inglés II", "semestre": 3, "prerrequisitos": ["Inglés I"]},
+
+    {"nombre": "Enfermedades parasitarias", "semestre": 4, "prerrequisitos": ["Zoología"]},
+    {"nombre": "Genética", "semestre": 4, "prerrequisitos": ["Bioestadística"]},
+    {"nombre": "Fisiología animal", "semestre": 4, "prerrequisitos": ["Anatomía del canino", "Bioquímica"]},
+    {"nombre": "Administración y emprendimiento veterinario", "semestre": 4, "prerrequisitos": []},
+    {"nombre": "Microbiología general y veterinaria", "semestre": 4, "prerrequisitos": ["Biología celular"]},
+
+    {"nombre": "Reproducción e inseminación artificial", "semestre": 5, "prerrequisitos": ["Fisiología animal"]},
+    {"nombre": "Etología y bienestar animal", "semestre": 5, "prerrequisitos": ["Zoología"]},
+    {"nombre": "Nutrición y alimentación animal", "semestre": 5, "prerrequisitos": ["Bioquímica"]},
+    {"nombre": "Tecnología de los alimentos", "semestre": 5, "prerrequisitos": ["Microbiología general y veterinaria"]},
+    {"nombre": "Fisiopatología", "semestre": 5, "prerrequisitos": ["Fisiología animal", "Histoembriología"]},
+    {"nombre": "Inmunología", "semestre": 5, "prerrequisitos": ["Microbiología general y veterinaria"]},
+
+    {"nombre": "Producción avícola", "semestre": 6, "prerrequisitos": ["Nutrición y alimentación animal", "Etología y bienestar animal"]},
+    {"nombre": "Obstetricia y ginecología", "semestre": 6, "prerrequisitos": ["Reproducción e inseminación artificial"]},
+    {"nombre": "Farmacología y toxicología", "semestre": 6, "prerrequisitos": ["Fisiología animal"]},
+    {"nombre": "Control y calidad de los alimentos", "semestre": 6, "prerrequisitos": ["Tecnología de los alimentos", "Enfermedades parasitarias"]},
+    {"nombre": "Enfermedades infecciosas", "semestre": 6, "prerrequisitos": ["Inmunología"]},
+    {"nombre": "Patología de sistemas", "semestre": 6, "prerrequisitos": ["Fisiopatología"]},
+
+    {"nombre": "Práctica intermedia", "semestre": 7, "prerrequisitos": ["Farmacología y toxicología", "Enfermedades infecciosas"]},
+    {"nombre": "Producción de ovinos y caprinos", "semestre": 7, "prerrequisitos": ["Genética"]},
+    {"nombre": "Epidemiología veterinaria", "semestre": 7, "prerrequisitos": ["Enfermedades infecciosas"]},
+    {"nombre": "Laboratorio clínico", "semestre": 7, "prerrequisitos": ["Patología de sistemas"]},
+    {"nombre": "Semiología", "semestre": 7, "prerrequisitos": ["Farmacología y toxicología", "Fisiopatología", "Anatomía comparada"]},
+    {"nombre": "Producción porcina", "semestre": 7, "prerrequisitos": ["Reproducción e inseminación artificial", "Medio ambiente y gestión ambiental"]},
+
+    {"nombre": "Medicina de caninos", "semestre": 8, "prerrequisitos": ["Laboratorio clínico"]},
+    {"nombre": "Medicina de felinos", "semestre": 8, "prerrequisitos": ["Laboratorio clínico"]},
+    {"nombre": "Cirugía general", "semestre": 8, "prerrequisitos": []},
+    {"nombre": "Medicina de animales mayores", "semestre": 8, "prerrequisitos": ["Laboratorio clínico"]},
+    {"nombre": "Medicina de animales exóticos", "semestre": 8, "prerrequisitos": ["Laboratorio clínico"]},
+
+    {"nombre": "Diagnóstico por imágenes", "semestre": 9, "prerrequisitos": ["Patología de sistemas"]},
+    {"nombre": "Metodología de la investigación", "semestre": 9, "prerrequisitos": ["Epidemiología veterinaria"]},
+    {"nombre": "Patología quirúrgica", "semestre": 9, "prerrequisitos": ["Cirugía general"]},
+    {"nombre": "Producción de bovinos de carne y leche", "semestre": 9, "prerrequisitos": ["Obstetricia y ginecología"]},
+    {"nombre": "Formulación y evaluación de proyectos", "semestre": 9, "prerrequisitos": ["Administración y emprendimiento veterinario"]},
+    {"nombre": "Producción acuícola", "semestre": 9, "prerrequisitos": ["Nutrición y alimentación animal"]},
+    {"nombre": "Práctica final", "semestre": 9, "prerrequisitos": ["Práctica intermedia"]},
+
+    {"nombre": "Clínica de animales mayores", "semestre": 10, "prerrequisitos": ["Medicina de animales mayores", "Diagnóstico por imágenes"]},
+    {"nombre": "Farmacología aplicada", "semestre": 10, "prerrequisitos": ["Clínica de animales mayores", "Medicina de caninos"]},
+    {"nombre": "Clínica de animales menores", "semestre": 10, "prerrequisitos": ["Medicina de caninos", "Diagnóstico por imágenes"]},
+    {"nombre": "Salud pública", "semestre": 10, "prerrequisitos": ["Control y calidad de los alimentos", "Epidemiología veterinaria"]},
+    {"nombre": "Trabajo de titulación", "semestre": 10, "prerrequisitos": ["Metodología de la investigación"]}
+]
+
+# Convertir lista a JSON para insertar en JavaScript
+import json
+ramos_json = json.dumps(ramos_pdf, ensure_ascii=False)
+
+# Insertar ramos_json dentro del HTML generado antes
+html_output = html_content.replace("const ramos_pdf = [...];", f"const ramos_pdf = {ramos_json};")
+
+# Guardar el archivo HTML corregido
+file_path = "/mnt/data/index.html"
+with open(file_path, "w", encoding="utf-8") as f:
+    f.write(html_output)
+
+file_path
